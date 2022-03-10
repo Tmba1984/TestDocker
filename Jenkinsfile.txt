@@ -1,5 +1,5 @@
 pipeline{
-	agent {docker{image 'maven:3.8.4-openjdk-8'}}
+	agent {dockerfile true}
 	
 	stages{
 		stage('Git-Checkout'){
