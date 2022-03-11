@@ -1,5 +1,5 @@
 pipeline{
-	agent {image 'node:16.13.1-alpine' }
+	agent {dockerfile true}
 	
 	stages{
 		stage('Git-Checkout'){
